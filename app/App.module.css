@@ -1,0 +1,49 @@
+.App_main {
+  padding: 2rem 20rem;
+}
+
+.App_txt_1 {
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.App_txt_2 {
+  color: gray;
+  font-size: 0.9rem;
+}
+
+.App_products {
+  margin: 3rem 0;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 1rem;
+}
+
+.App_product {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: space-between;
+  border: 0.1rem solid rgb(200, 200, 200, 0.5);
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.App_product_image {
+  height: 12rem;
+  object-fit: cover;
+}
+
+.App_txt_3 {
+  color: #444;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.App_txt_4 {
+  color: #000;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
