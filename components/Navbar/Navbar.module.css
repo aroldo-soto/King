@@ -5,6 +5,7 @@
   top: 0;
   padding: 0 20rem;
   background-color: #000;
+  align-items: center;
 }
 
 .Navbar_txt_1 {
@@ -17,6 +18,7 @@
 }
 
 .Navbar_nav {
+  width: 100%;
   display: grid;
   grid-auto-flow: column;
   grid-gap: 0.3rem;
@@ -36,4 +38,20 @@
 
 .Navbar_txt_2:hover {
   background-color: rgb(55, 55, 55);
+}
+
+.Navbar_cart {
+  position: absolute;
+  top: 1rem;
+  right: 20rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  width: fit-content;
+  background-color: #222;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.Navbar_cart:hover {
+  background-color: #333;
 }

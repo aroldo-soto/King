@@ -40,8 +40,8 @@ export default function Home() {
       <div className={styles.App_products}>
         {products.map((product) => {
           return (
-            <Link href={`/products/${product.id}`}>
-              <div key={product.id} className={styles.App_product}>
+            <Link href={`/products/${product.id}`} key={product.id}>
+              <div className={styles.App_product}>
                 <Image
                   src={product.image}
                   alt={product.name}
