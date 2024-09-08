@@ -1,0 +1,43 @@
+.Cart {
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.CartItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.CartItemDetails {
+  flex: 1;
+}
+
+.Counter {
+  display: flex;
+  align-items: center;
+}
+
+.Counter button {
+  margin: 0 5px;
+}
+
+.RemoveButton {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.RemoveButton:hover {
+  background-color: #c0392b;
+}
+
+.CartTotal {
+  margin-top: 20px;
+  font-size: 1.5em;
+  text-align: right;
+}

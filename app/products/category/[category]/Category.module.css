@@ -1,0 +1,24 @@
+.Category {
+  padding: 20px;
+}
+
+.ProductsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.ProductCard {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.ProductCard h3 {
+  margin: 10px 0;
+}
+
+.ProductCard p {
+  font-size: 1.2em;
+  color: #555;
+}
