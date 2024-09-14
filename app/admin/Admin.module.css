@@ -1,5 +1,19 @@
-.Admin {
-  padding: 2rem 20rem;
-  display: flex;
-  justify-content: center;
+/* Admin.module.css */
+.adminContainer {
+  text-align: center;
+  padding: 50px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.adminContainer h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.adminContainer p {
+  font-size: 1.2rem;
+  color: #555;
 }

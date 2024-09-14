@@ -1,57 +1,84 @@
+/* Ajustar el padding de la Navbar para que coincida con el de .App_main */
+
 .Navbar {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   position: sticky;
   top: 0;
-  padding: 0 20rem;
+  padding: 1rem 20rem; /* Mismo padding que .App_main */
   background-color: #000;
-  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
 
-.Navbar_txt_1 {
-  text-align: center;
+.Navbar_logo {
   color: white;
-  text-transform: uppercase;
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   font-weight: 700;
-  padding: 0.8rem 0;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.Navbar_logo:hover {
+  color: #0070f3;
 }
 
 .Navbar_nav {
-  width: 100%;
-  display: grid;
-  grid-auto-flow: column;
-  grid-gap: 0.3rem;
+  display: flex;
+  gap: 1.5rem;
 }
 
 .Navbar_txt_2 {
-  padding: 0.6rem 0;
-  text-align: center;
-  font-size: 0.8rem;
-  font-weight: 500;
+  font-size: 1rem;
   color: white;
-  background-color: rgb(33, 33, 33);
-  border-radius: 0.2rem 0.2rem 0 0;
+  text-transform: capitalize;
+  font-weight: 500;
   cursor: pointer;
-  transition: 0.2s ease;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  padding: 0.6rem 1rem;
+  border-radius: 0.3rem;
 }
 
 .Navbar_txt_2:hover {
-  background-color: rgb(55, 55, 55);
-}
-
-.Navbar_cart {
-  position: absolute;
-  top: 1rem;
-  right: 20rem;
-  padding: 0.5rem;
-  border-radius: 50%;
-  width: fit-content;
-  background-color: #222;
-  cursor: pointer;
-  transition: 0.2s ease;
-}
-
-.Navbar_cart:hover {
   background-color: #333;
+  color: #0070f3;
+}
+
+.rightSection {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.icon {
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: #0070f3;
+}
+
+/* Responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+  .Navbar {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .Navbar_logo {
+    font-size: 1.5rem;
+  }
+
+  .Navbar_nav {
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .rightSection {
+    margin-top: 1rem;
+    gap: 1rem;
+  }
 }
