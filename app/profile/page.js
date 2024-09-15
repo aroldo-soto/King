@@ -1,5 +1,5 @@
 "use client";
-import { useAuth } from "../context/AuthContext.js";
+import { useAuth } from "@/app/context/AuthContext";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import styles from "./Profile.module.css";
