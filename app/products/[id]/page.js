@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import styles from "./Product.module.css";
 import Image from "next/image";
-import { useCart } from "@/app/context/CartContext";
+import { useCart } from "../../context/CartContext";
 
 async function getProduct(id) {
   try {

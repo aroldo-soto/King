@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
-import { useCart } from "@/app/context/CartContext";
-import { useAuth } from "@/app/context/AuthContext";
+import { useCart } from "../context/CartContext";
+import { useAuth } from "../context/AuthContext";
 import { useRouter } from "next/navigation";
 import styles from "./Checkout.module.css";
 

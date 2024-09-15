@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { collection, getDocs } from "firebase/firestore";
-import { db } from "@/app/firebase/config";
+import { db } from "../../firebase/config";
 import styles from "./Orders.module.css";
 
 export default function OrdersPage() {

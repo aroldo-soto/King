@@ -1,5 +1,5 @@
 import "./globals.css";
-import Navbar from "@/app/components/Navbar/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 import { CartProvider } from "./context/CartContext";
 import { AuthProvider } from "./context/AuthContext";
 
