@@ -44,10 +44,15 @@ async function getProductsByCategory(category) {
 }
 
 export async function generateStaticParams() {
-  const categories = await getAllCategories();
-  return categories.map((category) => ({
-    category: encodeURIComponent(category),
-  }));
+  try {
+    const categories = await getAllCategories();
+    return categories.map((category) => ({
+      category: encodeURIComponent(category),
+    }));
+  } catch (error) {
+    console.error("Error generating static params:", error);
+    return [];
+  }
 }
 
 const CategoryPage = async ({ params }) => {
