@@ -1,6 +1,6 @@
 import "./globals.css";
 import Navbar from "./components/Navbar/Navbar";
-import { CartProvider } from "./context/CartContext";
+import { CartProvider } from "./context/CartContext.js";
 import { AuthProvider } from "./context/AuthContext";
 
 export const metadata = {

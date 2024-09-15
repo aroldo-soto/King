@@ -1,5 +1,5 @@
 "use client";
-import { useCart } from "../context/CartContext";
+import { useCart } from "../context/CartContext.js";
 import Link from "next/link";
 import styles from "./Cart.module.css";
 

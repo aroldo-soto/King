@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { useAuth } from "../../context/AuthContext";
+import { useAuth } from "../../context/AuthContext.js";
 import { useRouter } from "next/navigation";
 import styles from "./Register.module.css";
 
