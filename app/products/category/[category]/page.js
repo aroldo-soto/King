@@ -4,7 +4,9 @@ import styles from "./Category.module.css";
 
 async function getAllCategories() {
   try {
-    const response = await fetch("http://localhost:3000/api/products");
+    const response = await fetch(
+      `${process.env.NEXT_PUBLIC_API_URL}/api/products`
+    );
     const products = await response.json();
     const categories = new Set(products.map((product) => product.category));
     return Array.from(categories);
@@ -17,9 +19,9 @@ async function getAllCategories() {
 async function getProductsByCategory(category) {
   try {
     const response = await fetch(
-      `http://localhost:3000/api/products/category/${encodeURIComponent(
-        category
-      )}`
+      `${
+        process.env.NEXT_PUBLIC_API_URL
+      }/api/products/category/${encodeURIComponent(category)}`
     );
     if (!response.ok) {
       throw new Error("Error al obtener los productos por categoría");

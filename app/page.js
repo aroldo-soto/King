@@ -19,9 +19,12 @@ export const metadata = {
 };
 
 const Home = async () => {
-  const response = await fetch("http://localhost:3000/api/products", {
-    next: { revalidate: 60 },
-  });
+  const response = await fetch(
+    `${process.env.NEXT_PUBLIC_API_URL}/api/products`,
+    {
+      next: { revalidate: 60 },
+    }
+  );
   const products = await response.json();
 
   return (
