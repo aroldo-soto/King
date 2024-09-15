@@ -7,6 +7,13 @@ async function getAllCategories() {
     const response = await fetch(
       `${process.env.NEXT_PUBLIC_API_URL}/api/products`
     );
+
+    if (!response.ok) {
+      throw new Error(
+        `Error al obtener las categorías: ${response.statusText}`
+      );
+    }
+
     const products = await response.json();
     const categories = new Set(products.map((product) => product.category));
     return Array.from(categories);
@@ -23,9 +30,11 @@ async function getProductsByCategory(category) {
         process.env.NEXT_PUBLIC_API_URL
       }/api/products/category/${encodeURIComponent(category)}`
     );
+
     if (!response.ok) {
-      throw new Error("Error al obtener los productos por categoría");
+      throw new Error(`Error al obtener los productos: ${response.statusText}`);
     }
+
     const products = await response.json();
     return products;
   } catch (error) {
