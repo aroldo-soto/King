@@ -36,7 +36,7 @@ export default function CheckoutPage() {
     };
 
     try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/orders`, {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/orders`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
