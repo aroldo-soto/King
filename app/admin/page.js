@@ -24,8 +24,8 @@ export default function AdminPage() {
     <div className={styles.adminContainer}>
       <h1>Bienvenido al Panel Administrativo</h1>
       <p>
-        Selecciona 'Gestionar Productos' para administrar los productos de la
-        tienda.
+        En Gestionar Productos puedes administrar los productos, y en Ver
+        Órdenes puedes administrar las órdenes.
       </p>
     </div>
   );

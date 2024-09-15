@@ -13,7 +13,6 @@ export default function AdminLayout({ children }) {
           </li>
           <li>
             <Link href="/admin/orders">Ver Órdenes</Link>{" "}
-            {/* Nuevo enlace para ver órdenes */}
           </li>
         </ul>
       </nav>

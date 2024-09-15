@@ -160,7 +160,6 @@ const ProductsPage = () => {
         </div>
       </div>
 
-      {/* Lista de productos */}
       <h2 className={styles.subtitle}>Lista de productos</h2>
       {loading ? (
         <p>Cargando productos...</p>
