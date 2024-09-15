@@ -4,9 +4,7 @@ import styles from "./Category.module.css";
 
 async function getAllCategories() {
   try {
-    const response = await fetch(
-      `${process.env.NEXT_PUBLIC_API_URL}/api/products`
-    );
+    const response = await fetch(`/api/products`);
 
     if (!response.ok) {
       throw new Error(
@@ -26,9 +24,7 @@ async function getAllCategories() {
 async function getProductsByCategory(category) {
   try {
     const response = await fetch(
-      `${
-        process.env.NEXT_PUBLIC_API_URL
-      }/api/products/category/${encodeURIComponent(category)}`
+      `/api/products/category/${encodeURIComponent(category)}`
     );
 
     if (!response.ok) {
