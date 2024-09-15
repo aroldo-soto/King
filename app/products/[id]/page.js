@@ -7,12 +7,13 @@ import { useCart } from "@/app/context/CartContext";
 async function getProduct(id) {
   try {
     const response = await fetch(
-      `${process.env.VERCEL_URL}/api/products/${id}`
+      `${process.env.NEXT_PUBLIC_API_URL}/api/products/${id}`
     );
     if (!response.ok) {
       throw new Error("Producto no encontrado");
     }
     const product = await response.json();
+
     return product;
   } catch (error) {
     console.error("Error al obtener el producto:", error);
