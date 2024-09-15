@@ -4,7 +4,7 @@ import styles from "./Category.module.css";
 
 async function getAllCategories() {
   try {
-    const response = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/products`);
+    const response = await fetch(`https://king-flax.vercel.app/api/products`);
 
     if (!response.ok) {
       throw new Error(

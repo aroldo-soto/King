@@ -11,7 +11,7 @@ const Navbar = () => {
     const fetchCategories = async () => {
       try {
         const response = await fetch(
-          `${process.env.NEXT_PUBLIC_URL}/api/products`
+          `https://king-flax.vercel.app/api/products`
         );
         const products = await response.json();
         const uniqueCategories = [
