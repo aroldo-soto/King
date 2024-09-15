@@ -10,6 +10,7 @@ import {
   doc,
 } from "firebase/firestore";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
+import Image from "next/image";
 import styles from "./Products.module.css";
 
 const ProductsPage = () => {
@@ -208,10 +209,12 @@ const ProductsPage = () => {
                     <h3>{product.name}</h3>
                     <p>${product.price}</p>
                     <p>{product.description}</p>
-                    <img
+                    <Image
                       src={product.image}
                       alt={product.name}
                       className={styles.productImage}
+                      width={150}
+                      height={150}
                     />
                   </div>
                   <div className={styles.actions}>

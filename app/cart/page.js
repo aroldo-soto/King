@@ -1,6 +1,7 @@
 "use client";
 import { useCart } from "@/app/context/CartContext";
 import Link from "next/link";
+import Image from "next/image";
 import styles from "./Cart.module.css";
 
 export default function Cart() {
@@ -23,10 +24,12 @@ export default function Cart() {
             {cart.map((item) => (
               <div key={item.productId} className={styles.cartItem}>
                 <div className={styles.itemDetails}>
-                  <img
+                  <Image
                     src={item.image}
                     alt={item.name}
                     className={styles.itemImage}
+                    width={100}
+                    height={100}
                   />
                   <div>
                     <h3>{item.name}</h3>

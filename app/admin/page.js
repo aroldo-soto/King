@@ -1,5 +1,5 @@
 "use client";
-import { useAuth } from "../context/AuthContext";
+import { useAuth } from "@/app/context/AuthContext";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import styles from "./Admin.module.css";
@@ -24,7 +24,7 @@ export default function AdminPage() {
     <div className={styles.adminContainer}>
       <h1>Bienvenido al Panel Administrativo</h1>
       <p>
-        Selecciona "Gestionar Productos" para administrar los productos de la
+        Selecciona 'Gestionar Productos' para administrar los productos de la
         tienda.
       </p>
     </div>
