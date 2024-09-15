@@ -10,9 +10,7 @@ const Navbar = () => {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const response = await fetch(
-          `${process.env.NEXT_PUBLIC_API_URL}/api/products`
-        );
+        const response = await fetch(`${process.env.VERCEL_URL}/api/products`);
         const products = await response.json();
         const uniqueCategories = [
           ...new Set(products.map((product) => product.category)),
