@@ -19,7 +19,7 @@ export const metadata = {
 };
 
 const Home = async () => {
-  const response = await fetch(`https://king-flax.vercel.app/api/products`, {
+  const response = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/products`, {
     next: { revalidate: 60 },
   });
   const products = await response.json();
